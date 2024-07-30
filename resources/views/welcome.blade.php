@@ -158,13 +158,8 @@
                             <table class="table table-hover table-striped table-borderless custom_table">
                                 <thead class="table-success">
                                     <tr>
-                                        {{-- <th scope="col">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="select_all" />
-                                            </div>
-                                        </th> --}}
-                                        <th scope="col">Name</th>
+                                       <th scope="col"> Name </th> 
+                                      
                                         <th scope="col">Address</th>
                                         <th scope="col">City</th>
                                         <th scope="col">State</th>
@@ -176,29 +171,18 @@
                                 <tbody>
                                     @foreach($data as $data)
                                         <tr class="">
-                                            <th scope="row">
-                                                {{-- <div class="form-check">
-                                                    <input class="form-check-input checkbox" type="checkbox"
-                                                        value="" id="flexCheckDefault1"
-                                                        data-id="show"
-                                                        value="" />
-                                                </div> --}}
-                                            </th>
-                                            <td> {{$data->name}} </td>
+                                          <th scope="row"> {{$data->name}} </th>
+                                            <td> {{$data->address}} </td>
+                                            <td> {{$data->city}}</td>
                                             <td>
-                                               {{$data->address}}
+                                                {{$data->state}}
                                             </td>
 
-                                            <td> {{$data->city}} </td>
-                                            <td>
-                                               {{$data->state}}
-                                            </td>
-                                            <td>
-                                               {{$data->country}}
-                                            </td>
+                                            <td>  {{$data->country}} </td>
                                             <td>
                                                 {{$data->number}}
-                                             </td>
+                                            </td>
+                                         
                                             <td>  <ul class="persons single">
                                                 <li>
                                                     <a href="#">
