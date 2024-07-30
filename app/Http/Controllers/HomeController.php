@@ -37,10 +37,10 @@ class HomeController extends Controller
     {
 
 
-        $request->validate(
-            [   
-                'number' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            ]);
+        // $request->validate(
+        //     [   
+        //         'number' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+        //     ]);
 
        $data=new  data;
 
